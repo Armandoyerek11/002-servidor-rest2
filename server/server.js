@@ -29,6 +29,9 @@ app.get('/',function(req, res){
 
 app.use(require('./routes/usuario'));
 
+app.use(require('./routes/categoria'));
+
+
 
 app.listen(process.env.PORT, () => {
   console.log('el servidor esta en linea por el puerto ',process.env.PORT); 
